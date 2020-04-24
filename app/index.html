@@ -13,6 +13,20 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="bower_components/boomerang/boomerang.js"></script>
+  <script src="bower_components/boomerang/plugins/auto-xhr.js"></script>
+  <script src="bower_components/boomerang/plugins/spa.js"></script>
+  <script src="bower_components/boomerang/plugins/angular.js"></script>
+  <script src="bower_components/boomerang/plugins/navtiming.js"></script>
+  <script src="bower_components/boomerang/plugins/restiming.js"></script>
+  <script src="bower_components/boomerang/plugins/zzz-last-plugin.js"></script>
+  <script>
+    BOOMR.init({
+      beacon_url: "/beacon",
+      autorun: false,
+      // instrument_xhr: false
+    });
+  </script>
   <!-- inject:css -->
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
   <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
@@ -52,6 +66,7 @@
 <script src="features/feature2/feature2.js"></script>
 <script src="features/feature3/feature3.js"></script>
 <!-- endinject -->
+<script src="js/configs/boomerang.js"></script>
 
 </body>
 </html>
